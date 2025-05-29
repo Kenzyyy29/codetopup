@@ -43,6 +43,12 @@ export default function RegisterForm() {
    return;
   }
 
+  const passwordError = validatePassword(formData.password);
+  if (passwordError) {
+   setError(passwordError);
+   return;
+  }
+
   setLoading(true);
   setError("");
 
@@ -68,7 +74,7 @@ export default function RegisterForm() {
 
    setSuccess("Registration successful! Redirecting...");
    setTimeout(() => router.push("/auth/login"), 2000);
-  } catch (err) {
+  } catch (_err) {
    setError("Registration failed. Please try again.");
   } finally {
    setLoading(false);

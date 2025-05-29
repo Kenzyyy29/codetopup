@@ -28,7 +28,7 @@ export default function LoginForm() {
    } else {
     router.push("/dashboard");
    }
-  } catch (err) {
+  } catch (_err) {
    setError("Something went wrong. Please try again.");
   } finally {
    setLoading(false);
@@ -119,7 +119,7 @@ export default function LoginForm() {
    </form>
 
    <div className="mt-4 text-center text-sm text-gray-600">
-    Don't have an account?{" "}
+    Don&apos;t have an account?{" "}
     <Link
      href="/auth/register"
      className="font-medium text-red-600 hover:text-red-500">
