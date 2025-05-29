@@ -74,7 +74,7 @@ export default function RegisterForm() {
 
    setSuccess("Registration successful! Redirecting...");
    setTimeout(() => router.push("/auth/login"), 2000);
-  } catch (_err) {
+  } catch {
    setError("Registration failed. Please try again.");
   } finally {
    setLoading(false);

@@ -28,7 +28,7 @@ export default function LoginForm() {
    } else {
     router.push("/dashboard");
    }
-  } catch (_err) {
+  } catch {
    setError("Something went wrong. Please try again.");
   } finally {
    setLoading(false);
