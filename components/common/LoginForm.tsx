@@ -36,7 +36,7 @@ export default function LoginForm() {
  };
 
  return (
-  <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+  <div className="max-w-md w-full mx-auto bg-white p-8 rounded-lg shadow-lg">
    <h2 className="text-2xl font-bold text-center text-red-600 mb-6">
     Login to CodeTopup
    </h2>
